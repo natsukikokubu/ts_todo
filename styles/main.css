@@ -1,0 +1,30 @@
+.sample-button {
+  padding: 8px 16px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: skyblue;
+  cursor: pointer;
+}
+
+.sample-button:hover {
+  opacity: 0.8;
+}
+
+.sample-button:active {
+  opacity: 1;
+}
+
+.sample-form {
+  margin: 16px;
+  display: flex;
+}
+
+.sample-input {
+  margin-right: 8px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.bg-green {
+  background-color: lightseagreen;
+}

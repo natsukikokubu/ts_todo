@@ -1,0 +1,24 @@
+{
+  "name": "ts_todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:watch": "tsc -w",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natsukikokubu/ts_todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natsukikokubu/ts_todo/issues"
+  },
+  "homepage": "https://github.com/natsukikokubu/ts_todo#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "typescript": "^5.1.3"
+  }
+}
