@@ -7,17 +7,27 @@
 </head>
 
 <body>
-  <p>Hello world!</p>
-  <button class="sample-button" onclick="handleClick(123)">これは数字のボタンです</button>
-  <button class="sample-button" onclick="handleClick('hogehoge')">これは文字列のボタンです</button>
-  <button class="sample-button" onclick="handleClick(true)">これは真偽値のボタンです</button>
-
-  <form class="sample-form" id="sample-form">
-    <input class="sample-input" name="todo" placeholder="TODOを入れてね"></input>
-    <button class="sample-button bg-green" type='submit'>送信</button>
+  <h1>TODO-List</h1>
+  <form>
+    <input class="task_value" type="text" />
+    <button class="task_submit" type="button">Add Task</button>
   </form>
+  <div id="table">
+    <ul class="task_list">
+      <li><input class="task" type="checkbox"></li>
+      <li><input class="task" type="checkbox"></li>
+      <li><input class="task" type="checkbox"></li>
+      <li><input class="task" type="checkbox"></li>
+      <li><input class="task" type="checkbox"></li>
+      <li><input class="task" type="checkbox"></li>
+    </ul>
+  </div>
+
+  <hr class="hr1">
+  <h2>完了</h2>
+
 </body>
 
-<script src="./scripts/main.js"></script>
+
 
 </html>
