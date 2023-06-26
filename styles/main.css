@@ -2,7 +2,7 @@
   font-family: sans-serif;
 }
 main {
-  margin: 30px 100px 30px 100px;
+  margin: 30px 100px;
 }
 
 h1 {
@@ -52,7 +52,7 @@ li {
 }
 
 hr {
-  border-top: 2px, solid, #b1b3b6;
+  border-top: 2px solid #b1b3b6;
   margin-top: 100px;
 }
 
