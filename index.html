@@ -1,23 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>TODOアプリ</title>
-  <link href="./styles/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODOリスト</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-  <p>Hello world!</p>
-  <button class="sample-button" onclick="handleClick(123)">これは数字のボタンです</button>
-  <button class="sample-button" onclick="handleClick('hogehoge')">これは文字列のボタンです</button>
-  <button class="sample-button" onclick="handleClick(true)">これは真偽値のボタンです</button>
+  <main>
+    <h1>やることリスト</h1>
+    <form onsubmit="addTask(event)">
 
-  <form class="sample-form" id="sample-form">
-    <input class="sample-input" name="todo" placeholder="TODOを入れてね"></input>
-    <button class="sample-button bg-green" type='submit'>送信</button>
-  </form>
+      <label class="label-class" for="taskInput">
+        <input class="task-input" name="task" id="taskInput" type="text" />
+      </label>
+      <button class="add-task-button " type="submit">Add Task</button>
+    </form>
+    <div id="task-container">
+
+
+      <ul id="task-list">
+
+      </ul>
+    </div>
+
+    <hr>
+    <h2>完了</h2>
+  </main>
 </body>
-
 <script src="./scripts/main.js"></script>
+
 
 </html>
