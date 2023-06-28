@@ -10,19 +10,18 @@
   <main>
     <h1>やることリスト</h1>
     <form onsubmit="addTask(event)">
-      <input class="task-input" name="task" type="text" />
+
+      <label class="label-class" for="taskInput">
+        <input class="task-input" name="task" id="taskInput" type="text" />
+      </label>
       <button class="add-task-button " type="submit">Add Task</button>
     </form>
-    <div id="task-container"></div>
+    <div id="task-container">
 
-    <!--<ul class="task_list">
-      <li><input class="task" type="checkbox"></li>
-      <li><input class="task" type="checkbox"></li>
-      <li><input class="task" type="checkbox"></li>
-      <li><input class="task" type="checkbox"></li>
-      <li><input class="task" type="checkbox"></li>
-      <li><input class="task" type="checkbox"></li>
-    </ul>-->
+
+      <ul id="task-list">
+
+      </ul>
     </div>
 
     <hr>
