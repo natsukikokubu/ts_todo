@@ -13,6 +13,12 @@ h1 {
   padding-top: 50px;
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
 form {
   text-align: center;
 }
@@ -45,12 +51,6 @@ form {
 hr {
   border-top: 2px solid #b1b3b6;
   margin-top: 100px;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
 }
 
 .task-container {
