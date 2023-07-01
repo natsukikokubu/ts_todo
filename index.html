@@ -1,35 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
-  <meta charset="utf-8">
-  <title>TODOアプリ</title>
-  <link href="./styles/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODOリスト</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
   <main>
     <h1>やることリスト</h1>
-    <form>
-      <input class="task-input" type="text" />
-      <button class="add-task-button " type="button">Add Task</button>
+
+    <form onsubmit="addTask(event)">
+
+      <label class="label-class" for="taskInput">
+        <input class="task-input" name="task" id="taskInput" type="text" />
+      </label>
+      <button class="add-task-button " type="submit">Add Task</button>
     </form>
-    <div">
+    <ul id="task-list"></ul>
+    </div>
 
-      <ul class="task_list">
-        <li><input class="task" type="checkbox"></li>
-        <li><input class="task" type="checkbox"></li>
-        <li><input class="task" type="checkbox"></li>
-        <li><input class="task" type="checkbox"></li>
-        <li><input class="task" type="checkbox"></li>
-        <li><input class="task" type="checkbox"></li>
-      </ul>
-      </div>
-
-      <hr>
-      <h2>完了</h2>
+    <hr>
+    <h2>完了</h2>
+    <div id="completed-container">
+      <ul id="completed-list"></ul>
+    </div>
   </main>
 </body>
-
-
-
+<script src="./scripts/main.js"></script>
 </html>
