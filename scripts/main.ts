@@ -28,6 +28,8 @@ const addTask = (event: Event) => {
     taskItem.appendChild(label);
 
     // taskItemに作成したlabel要素を追加
+    //　 チェックボックスにチェックが付いた場合はcompletedListへ移動し
+    // チェックが外れたらtaskListに移動する
     checkbox.addEventListener("change", (event) => {
       const targetCheckbox = event.target as HTMLInputElement;
       const taskItem = targetCheckbox.parentElement?.parentElement;
@@ -48,7 +50,3 @@ const addTask = (event: Event) => {
     input.value = "";
   }
 };
-const form = document.querySelector("form");
-if (form) {
-  form.addEventListener("submit", addTask);
-}
