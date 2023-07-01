@@ -1,4 +1,4 @@
-#初めてTypeScriptを使用して作ったWebアプリケーションです
+# 初めてTypeScriptを使用して作ったWebアプリケーションです
 # ts_todo
 
 ## Setup
